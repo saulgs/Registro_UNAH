@@ -8,48 +8,48 @@
 </head>
 <body>
 	<header>
-			<div class="container-fluid">
-				<div class="row" style="background-image: url(../img/padre_trino_header.jpg); background-size: auto; background-attachment: local; background-repeat: no-repeat;">
-					<div class="col-sm">
-						<img style="float: right; padding-top: 40px" src="../img/logo-unah-blanco.png">
-						<h1 style="position: relative; padding:65px; float: right; color: white;">
-							DIRECCION DE INGRESO PERMANENCIA <br> Y PROMOCION - DIPP
-						</h1>
-					</div>
-				</div>				
-			</div>
-			<nav class="navbar navbar-expand-lg navbar-dark unah-color">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-			        <a class="nav-link" href="#">ADMISIONES UNAH</span></a>
-			      </li>
-				</ul>
-			  <a class="navbar-brand" href="../index.html"><img src="../img/logo-unah-blanco.png" class="nav-image"></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Estudiantes <span class="sr-only"></span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Docentes</a>
-			      </li>
-			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Dropdown
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="#">Action</a>
-			          <a class="dropdown-item" href="#">Another action</a>
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#">Something else here</a>
-			        </div>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>			
+				<div class="container-fluid">
+					<div class="row" style="background-image: url(../img/padre_trino_header.jpg); background-size: auto; background-attachment: local; background-repeat: no-repeat;">
+						<div class="col-sm">
+							<img style="float: right; padding-top: 40px" src="../img/logo-unah-blanco.png">
+							<h1 style="position: relative; padding:65px; float: right; color: white;">
+								DIRECCION DE INGRESO PERMANENCIA <br> Y PROMOCION - DIPP
+							</h1>
+						</div>
+					</div>				
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-dark unah-color">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+									<a class="nav-link" href="#">ADMISIONES UNAH</a>
+								</li>
+						</ul>
+						<a class="navbar-brand" href="../index.html"><img src="../img/logo-unah-blanco.png" class="nav-image"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Estudiantes <span class="sr-only"></span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Docentes</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Dropdown
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+				</nav>			
 	</header>
 	<main>
 		<div class="jumbotron" style="margin-bottom: 0rem;">
@@ -63,7 +63,7 @@
 				      <div class="caption">
 				        <h3><center>Estudiantes</center></h3>
 				        <p><center>Matricula tus clases, revisa tu historial, etc.</center></p>
-				        <p><a href="#" class="btn btn-primary" role="button" style="display: block; margin-left: auto; margin-right: auto;">Ingresar</a></p>
+				        <p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#md-login-estudiante" style="display: block; margin-left: auto; margin-right: auto;">Ingresar</a></p>
 				      </div>
 				    </div>
 			    </div>
@@ -112,6 +112,68 @@
 	<footer>
 
 	</footer>
+	<!-- Modal Login Estudiantes-->
+<div id="md-login-estudiante" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal Login Docentes-->
+<div id="md-login-docente" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal Login Jefes departamento / coordinadores-->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.js"></script>
