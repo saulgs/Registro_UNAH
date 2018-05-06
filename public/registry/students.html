@@ -2,20 +2,121 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Registro UNAH</title>
+	<title>Registro UNAH - Estudiantes</title>
 	<link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/students.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
  
 
 </head>
 <body>
-		<header>
-
-		</header>
-		<main>
-			<div>
-				<table id="miTabla" class="display">
-						<thead>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark unah-color">
+			<a class="navbar-brand" href="#">Registro UNAH - Estudiantes</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		<!--	<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+				</ul>
+			</div> -->
+		</nav>
+	</header>
+	<main>
+		<div class="jumbotron" style="margin-bottom: 0rem;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+						<label for="stInfo"><h2>Mi Información</h2></label>
+						<table id="stInfo" class="table table-sm">
+							<thead>
+								<tr>
+									<td><img src="../img/profile.png" alt="Profile image" class="img-thumbnail" width="200" height="200"></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alumno:</td>
+									<td>Lorem ipsum</td>
+								</tr>
+								<tr>
+									<td>Carrera:</td>
+									<td>Ing. de sistemas</td>
+								</tr>
+								<tr>
+									<td>Cuenta:</td>
+									<td>20121902121</td>
+								</tr>
+								<tr>
+									<td>Periodo:</td>
+									<td>II</td>
+								</tr>
+								<tr>
+									<td>Año Academico:</td>
+									<td>2018</td>
+								</tr>
+								<tr>
+									<td>Indice global:</td>
+									<td>98</td>
+								</tr>
+								<tr>
+									<td>Indice periodo:</td>
+									<td>98</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
+				
+					<div class="col col-sm-1 col-md-2 col-lg-8 col-xl-8">
+						<label for="miTabla"><h2>Forma 03</h2></label>
+						<table id="miTabla" class="table table-striped table-bordered table-hover">
+							<thead>
+									<tr>
+										<th>Name</th>
+										<th>Position</th>
+										<th data-class-name="priority">Salary</th>
+										<th>Start date</th>
+										<th>Office</th>
+										<th>Extn</th>
+									</tr>							
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="container-fluid" style="padding: 64px 32px 32px 64px;">
+				<div class="row">
+					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+						<label for="myChart"><h2>Grafico de barras</h2></label>
+						<canvas id="myChart" width="300" height="300"></canvas>
+						<caption>Descripcion del grafico</caption>
+					</div>
+					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+						<label for="myChart2"><h2>Grafico de pie</h2></label>
+						<canvas id="myChart2" width="300" height="300"></canvas>
+						<caption>Descripcion del grafico</caption>
+					</div>
+					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+							<label for="miTabla2"><h2>Calificaciones del Periodo</h2></label>
+						<table id="miTabla2" class="table table-striped table-bordered table-hover">
+							<thead>
 								<tr>
 									<th>Name</th>
 									<th>Position</th>
@@ -24,21 +125,33 @@
 									<th>Office</th>
 									<th>Extn</th>
 								</tr>							
-						</thead>
-						<tbody>
-
-						</tbody>
-				</table>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-				
-		</main>
-		<footer>
+		</div>
+		<div class="jumbotron" style="margin-bottom: 0rem;">
+			<div class="container-fluid">
+				<div class="row">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
 
-		</footer>
+	</footer>
 
 
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../DataTables/datatables.min.js"></script>
+	<script type="text/javascript" src="../js/pdfmake.min.js"></script>
+	<script type="text/javascript" src="../js/vfs_fonts.js"></script>
+	<script type="text/javascript" src="../js/buttons.html5.min.js"></script>
+	<script type="text/javascript" src="../js/buttons.print.min.js"></script>
+	<script type="text/javascript" src="../js/Chart.bundle.min.js"></script>
 	<script type="text/javascript" src="../js/students-controller.js"></script>
 </body>
 </html>
