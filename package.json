@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/saulgs/Registro_UNAH#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "location-href": "^1.0.0"
   }
 }
