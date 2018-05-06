@@ -41,6 +41,7 @@ $(document).ready( function () {
     });
 
     $("#miTabla2").DataTable({
+        dom: 'lBfrtip',
         data: data,
         columns: [
             { data: 'name' },

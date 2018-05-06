@@ -2,6 +2,8 @@ $(document).ready(function(){
     console.log("Main Registro UNAH");
 });
 
+
+
 $('#btn-login-student').click(function(){
     $.ajax({
         url:"/students/mainStudents",

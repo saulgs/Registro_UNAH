@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Registro UNAH - Estudiantes</title>
-	<link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/students.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/students.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
  
 
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark unah-color">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top unah-color">
 			<a class="navbar-brand" href="#">Registro UNAH - Estudiantes</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 			</button>
-		<!--	<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
-				</li>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="btn btn-outline-warning btn-lg" href="#">Matricula<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
 				</ul>
-			</div> -->
+				<form class=" form-inline my-2 my-lg-0">
+						<button class="btn btn-outline-success btn-lg my-2 my-sm-0" type="button">Cerrar Sesion</button>
+				</form>
+			</div>
 		</nav>
 	</header>
 	<main>
 		<div class="jumbotron" style="margin-bottom: 0rem;">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
 						<label for="stInfo"><h2>Mi Información</h2></label>
 						<table id="stInfo" class="table table-sm">
 							<thead>
@@ -80,7 +85,7 @@
 					</div>
 				
 				
-					<div class="col col-sm-1 col-md-2 col-lg-8 col-xl-8">
+					<div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
 						<label for="miTabla"><h2>Forma 03</h2></label>
 						<table id="miTabla" class="table table-striped table-bordered table-hover">
 							<thead>
@@ -101,19 +106,19 @@
 			</div>
 		</div>
 		<div class="container-fluid">
-			<div class="container-fluid" style="padding: 64px 32px 32px 64px;">
+			<div class="container-fluid" style="padding: 64px 20px 64px 20px;">
 				<div class="row">
-					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					<div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
 						<label for="myChart"><h2>Grafico de barras</h2></label>
 						<canvas id="myChart" width="300" height="300"></canvas>
 						<caption>Descripcion del grafico</caption>
 					</div>
-					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					<div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
 						<label for="myChart2"><h2>Grafico de pie</h2></label>
 						<canvas id="myChart2" width="300" height="300"></canvas>
 						<caption>Descripcion del grafico</caption>
 					</div>
-					<div class="col col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
 							<label for="miTabla2"><h2>Calificaciones del Periodo</h2></label>
 						<table id="miTabla2" class="table table-striped table-bordered table-hover">
 							<thead>
@@ -136,7 +141,7 @@
 		<div class="jumbotron" style="margin-bottom: 0rem;">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-4 col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
 						<div class="thumbnail">
 							<div class="thumb-cont mx-auto">
 								<img class="thumb-img thumb-custom" src="../img/historial.png" alt="historial_icono">
@@ -148,7 +153,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-8 col-sm-1 col-md-2 col-lg-8 col-xl-8">
+					<div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
 							<label for="miTabla3"><h2>Historial Academico</h2></label>
 						<table id="miTabla3" class="table table-striped table-bordered table-hover">
 							<thead>
@@ -168,13 +173,89 @@
 				</div>
 			</div>
 		</div>
+		<div class="container-fluid">
+			<div class="container-fluid" style="padding: 64px 20px 64px 20px;">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="thumbnail">
+							<div class="thumb-cont mx-auto">
+								<img class="thumb-img thumb-custom" src="../img/students.png" alt="...">
+							</div>
+						<div class="caption">
+							<h3><center>Estudiantes</center></h3>
+							<p><center>Matricula tus clases, revisa tu historial, etc.</center></p>
+							<p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#md-login-estudiante" style="display: block; margin-left: auto; margin-right: auto;">Ingresar</a></p>
+						</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="thumbnail">
+							<div class="thumb-cont mx-auto">
+								<img class="thumb-img thumb-custom" src="../img/teachers.png" alt="...">
+							</div>
+						<div class="caption">
+							<h3><center>Docentes</center></h3>
+							<p><center>Matricula tus clases, revisa tu historial, etc.</center></p>
+							<p><a href="#" class="btn btn-secondary" role="button" data-toggle="modal" data-target="#md-login-docente" style="display: block; margin-left: auto; margin-right: auto;">Ingresar</a></p>
+						</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="thumbnail">
+							<div class="thumb-cont mx-auto">
+								<img class="thumb-img thumb-custom" src="../img/boss.png" alt="...">
+							</div>
+							<div class="caption">
+								<h3><center>Jefes / Coordinadores</center></h3>
+								<p><center>Matricula tus clases, revisa tu historial, etc.</center></p>
+								<p><a href="#" class="btn btn-success" role="button" data-toggle="modal" data-target="#md-login-boss" style="display: block; margin-left: auto; margin-right: auto;">Ingresar</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
-	<footer>
-
+		
+	<!--Footer-->
+	<footer id="myFooter">
+		<divclass="container-fluid">
+			<div class="container-fluid footer-custom">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="thumbnail">
+							<div class="thumb-cont float-right">
+								<img class="thumb-img thumb-custom" src="../img/logo-unah-blanco.png" alt="Logo UNAH">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" >
+						<p><h2 style="text-align: center">Direccion de Ingreso, Permanencia y Promoción - DIPP</h2></p>
+						<hr style="border-color: white">
+						<p><h2 style="text-align: center"><i>"La Educación es la primera necesidad de la República"</i></h2></p>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding-top: 30px">
+						<p style="text-align: left"><h4>Contactanos</h4></p>
+						<p style="text-align: left"><h5><i>Correo: info@unah.edu.hn</i></h5></p>
+						<p style="text-align: left"><h5><i>Teléfono: (+504)2235-6235/2235-6600</i></h5></p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="container-fluid footer-copyright">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<div>
+						<center><p>© 2018 Copyright - Universidad Nacional Autonoma de Honduras</p></center>
+					</div>
+				</div>						
+			</div>
+		</div>
 	</footer>
 
 
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../DataTables/datatables.min.js"></script>
 	<script type="text/javascript" src="../js/pdfmake.min.js"></script>
 	<script type="text/javascript" src="../js/vfs_fonts.js"></script>
