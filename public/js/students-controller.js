@@ -17,6 +17,7 @@ $(document).ready( function () {
             "extn":       "8422"
         }
     ];
+
     $("#miTabla").DataTable({
         dom: 'lBfrtip',
         buttons: [
@@ -52,6 +53,28 @@ $(document).ready( function () {
        // "scrollX": true,
         "scrollY": '300',
         "scrollCollapse": true        
+    });
+
+    $("#miTabla3").DataTable({
+        dom: 'lBfrtip',
+        buttons: [
+            'copyHtml5',
+            'csvHtml5',
+            'pdfHtml5',
+            'print'
+        ],
+        data: data,
+        columns: [
+            { data: 'name' },
+            { data: 'position' },
+            { data: 'salary' },
+            { data: 'start_date' },
+            { data: 'office' },
+            { data: 'extn' }
+        ],
+       // "scrollX": true,
+        "scrollY": '300',
+        "scrollCollapse": true
     });
 
     var ctx = document.getElementById("myChart").getContext('2d');
