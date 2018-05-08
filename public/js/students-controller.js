@@ -5,7 +5,7 @@ $(document).ready( function(){
     //de la funcion .css()
     //lo que permite que el elemento selleciondo no se muestre
     //al cargar la pagina
-    $("#btn-cerrar-sesion").css("display","none");
+   // $("#btn-cerrar-sesion").css("display","none");
     var data = [
         {
             "name":       "Tiger Nixon",

@@ -19,10 +19,9 @@
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 unah-color">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Registro UNAH - Docentes</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
+          <a class="nav-link" href="#">Cerrar Sesion</a>
         </li>
       </ul>
     </nav>
@@ -33,17 +32,24 @@
           <div class="sidebar-sticky unah-color-light">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
+                  <span data-feather="home"></span>
+                  Pagina Principal <span class="sr-only">(current)</span>
                 </a>
               </li>
+              <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="collapse" data-target="#AsignaturasDrop" aria-expanded="false" aria-controls="AsignaturasDrop">
+                        <span data-feather="file"></span>
+                        Asignaturas impartidas
+                    </a>
+                    <div class="collapse" id="AsignaturasDrop">
+                        <div class="card card-body">
+                        <a class="dropdown-item unah-text-blue" href="#"><b>Clase 1</b></a>
+                        <a class="dropdown-item unah-text-blue" href="#"><b>Clase 2</b></a>
+                        <a class="dropdown-item unah-text-blue" href="#"><b>Clase 3</b></a>
+                        </div>
+                    </div>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="shopping-cart"></span>
@@ -106,7 +112,7 @@
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+         <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
             <h1 class="h2">Dashboard</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
@@ -118,7 +124,44 @@
                 This week
               </button>
             </div>
-          </div>
+          </div>-->
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <label for="stInfo"><h2>Mi Información</h2></label>
+                <table id="stInfo" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <td><img src="../img/profile.png" alt="Profile image" class="img-thumbnail" width="200" height="200"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre:</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Carrera:</td>
+                            <td>Ing. de sistemas</td>
+                        </tr>
+                        <tr>
+                            <td>Facultad:</td>
+                            <td>Ingenieria</td>
+                        </tr>
+                        <tr>
+                            <td>Numero de empleado:</td>
+                            <td>20121902121</td>
+                        </tr>
+                        <tr>
+                            <td>Periodo:</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>Año Academico:</td>
+                            <td>2018</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
           <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
 
