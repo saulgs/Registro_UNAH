@@ -1,4 +1,11 @@
-$(document).ready( function () {
+$(document).ready( function(){
+    console.log("Main Estudiantes");
+    //Ejemplo para agregar la propiedad css display con el valor de none
+    //Al cargarse el documento jquery la propiedad a traves
+    //de la funcion .css()
+    //lo que permite que el elemento selleciondo no se muestre
+    //al cargar la pagina
+    $("#btn-cerrar-sesion").css("display","none");
     var data = [
         {
             "name":       "Tiger Nixon",
@@ -15,10 +22,170 @@ $(document).ready( function () {
             "start_date": "2011/07/25",
             "office":     "Edinburgh",
             "extn":       "8422"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
+        },
+        {
+            "name":       "Tiger Nixon",
+            "position":   "System Architect",
+            "salary":     "$3,120",
+            "start_date": "2011/04/25",
+            "office":     "Edinburgh",
+            "extn":       "5421"
         }
     ];
 
-    $("#miTabla").DataTable({
+    $("#miTabla1").DataTable({
         dom: 'lBfrtip',
         buttons: [
             'copyHtml5',
@@ -36,7 +203,7 @@ $(document).ready( function () {
             { data: 'extn' }
         ],
        // "scrollX": true,
-        "scrollY": '300',
+        "scrollY": '250px',
         "scrollCollapse": true
     });
 
@@ -52,7 +219,7 @@ $(document).ready( function () {
             { data: 'extn' }
         ],
        // "scrollX": true,
-        "scrollY": '300',
+        "scrollY": '250px',
         "scrollCollapse": true        
     });
 
@@ -74,7 +241,7 @@ $(document).ready( function () {
             { data: 'extn' }
         ],
        // "scrollX": true,
-        "scrollY": '300',
+        "scrollY": '250px',
         "scrollCollapse": true
     });
 
@@ -164,5 +331,23 @@ $(document).ready( function () {
             animateRotate: true,
             animateScale: false
         }
+    });
+});
+
+$("#btn-matricula").click(function(){
+    $("#principal").fadeOut(200,function(){
+        $("#matricula").fadeIn(200);
+    });
+    $("#btn-matricula").fadeOut(200,function(){
+        $("#btn-volver").fadeIn(200);
+    });
+});
+
+$("#btn-volver").click(function(){
+    $("#matricula").fadeOut(200,function(){
+        $("#principal").fadeIn(200);
+    });
+    $("#btn-volver").fadeOut(200,function(){
+        $("#btn-matricula").fadeIn(200);
     });
 });

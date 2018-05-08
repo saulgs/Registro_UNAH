@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-		<title>Registro UNAH</title>
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/registry.css">
-		<link rel="icon" href="img/logo_unah.png" type="image/gif" sizes="any">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registro UNAH</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/registry.css" />
+	<link rel="icon" href="img/logo_unah.png" type="image/gif" sizes="any">
 </head>
 <body>
 	<header>
@@ -56,7 +57,7 @@
 		<div class="jumbotron" style="margin-bottom: 0rem;">
 			<div class="container">
 			  <div class="row">
-			    <div class="col-4">
+			    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
 			      	<div class="thumbnail">
 			      		<div class="thumb-cont mx-auto">
 				      		<img class="thumb-img thumb-custom" src="../img/students.png" alt="...">
@@ -68,7 +69,7 @@
 				      </div>
 				    </div>
 			    </div>
-			    <div class="col-4">
+			    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
 			     	<div class="thumbnail">
 			     		<div class="thumb-cont mx-auto">
 				      		<img class="thumb-img thumb-custom" src="../img/teachers.png" alt="...">
@@ -80,7 +81,7 @@
 				      </div>
 				    </div>
 			    </div>
-			    <div class="col-4">
+			    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
 			     	<div class="thumbnail">
 			     		<div class="thumb-cont mx-auto">
 				      <img class="thumb-img thumb-custom" src="../img/boss.png" alt="...">
@@ -95,23 +96,58 @@
 			  </div>
 			</div>
 		</div>
-		<div class="container-fluid unah-color">
-			<div class="container" style="padding: 64px 20px 64px 20px;">
-				<div class="thumbnail">
-		     		<div class="mx-auto" style="width: 864px; height: 200px;">
-				     	<img class="thumb-img thumb-custom" style="height: auto; width: auto; max-height: 200px; max-width: 600px;" src="../img/disability2.png" alt="...">
-				    </div>
-			      <div class="caption" style="color: white;">
-			        <h3>Servicios al Estudiante con Necesidades Especiales / Docentes / Coordinadores</h3>
-			        <p>Porque ellos se merecen la mejor atención.</p>
-			        <p><a href="#" class="btn btn-danger" role="button">Ingresar</a></p>
-			      </div>
-			    </div>
-		    </div>
+		<div class="container-fluid">
+			<div class="container-fluid" style="padding: 64px 20px 64px 20px;">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<div class="thumbnail">
+							<div class="mx-auto">
+								<img class="thumb-img thumb-custom" style="height: auto; width: auto; max-height: 200px; max-width: 600px;" src="../img/disability2.png" alt="...">
+							</div>
+							<div class="caption">
+								<h3><center>Servicios al Estudiante con Necesidades Especiales / Docentes / Coordinadores</center></h3>
+								<p><center>Porque ellos se merecen la mejor atención.</center></p>
+								<p style="text-align: center"><a href="#" class="btn btn-danger" role="button" style="width: 330px;">Ingresar</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
-	<footer>
-
+	<footer id="myFooter">
+		<divclass="container-fluid">
+			<div class="container-fluid footer-custom">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="thumbnail">
+							<div class="thumb-cont float-right">
+								<img class="thumb-img thumb-custom" src="../img/logo-unah-blanco.png" alt="Logo UNAH">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" >
+						<p><h2 style="text-align: center">Direccion de Ingreso, Permanencia y Promoción - DIPP</h2></p>
+						<hr style="border-color: white">
+						<p><h2 style="text-align: center"><i>"La Educación es la primera necesidad de la República"</i></h2></p>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding-top: 30px">
+						<p style="text-align: left"><h4>Contactanos</h4></p>
+						<p style="text-align: left"><h5><i>Correo: info@unah.edu.hn</i></h5></p>
+						<p style="text-align: left"><h5><i>Teléfono: (+504)2235-6235/2235-6600</i></h5></p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="container-fluid footer-copyright">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<div>
+						<center><p>© 2018 Copyright - Universidad Nacional Autonoma de Honduras</p></center>
+					</div>
+				</div>						
+			</div>
+		</div>
 	</footer>
 	<!-- Modal Login Estudiantes-->
 	<div class="modal fade" id="md-login-estudiante" tabindex="-1" role="dialog" aria-labelledby="LoginEstudiante" aria-hidden="true">
@@ -171,7 +207,7 @@
 			</div>
 			<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn btn-primary">Iniciar Sesión</button>
+					<button type="button" class="btn btn-primary" id="btn-login-teacher">Iniciar Sesión</button>
 			</div>
 		</div>
 	</div>

@@ -1,9 +1,21 @@
 $(document).ready(function(){
    $('.parallax').parallax();
-   // Initialize collapse button
    $(".button-collapse").sideNav();
    $('.dropdown-button').dropdown();
    
+});
+
+$("#btn-registry").click(function(){
+  $.ajax({
+    url:"/main/toRegistry",
+    method:"GET",
+    success: function(response){
+            location.href = response;
+    },
+    error: function (e) {
+      alert("Ocurrió el siguiente error:"+JSON.stringify(e));
+    }
+  });
 });
 
 window.onscroll = function() {myFunction()};

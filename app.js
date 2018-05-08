@@ -2,7 +2,9 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
+var main = require('./routes/main-unah');
 var students = require('./routes/students');
+var teachers = require('./routes/teachers');
 
 /*
  * En los imports esta var students = require('./routes/students')
@@ -28,7 +30,9 @@ app.use('/', express.static(__dirname + "/public/"));
  * post lo recibe la URL '/registry/students/holamundo'
  */
 
+app.use('/main', main);
 app.use('/students', students);
+app.use('/teachers', teachers);
 
 
 app.listen(3000, () => {

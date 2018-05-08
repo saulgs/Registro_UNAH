@@ -1,5 +1,13 @@
 .unah-color{
-    background-color: #002484;
+    background-color: #002484!important;
+}
+
+.unah-color-light{
+    background-color: #1A3A91!important;
+}
+
+.unah-text{
+    color: white!important;
 }
 
 .thumb-img{
@@ -31,5 +39,13 @@
     color: #fff;
     background-color: #031a58;
   }
+
+  .unah-border-color{
+    border-color: #002484!important;
+}
+
+.unah-card-color{
+    background-color: #002484!important;
+}
 
 

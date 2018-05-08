@@ -55,3 +55,14 @@
 	margin-right: auto;
 }
 
+.footer-custom{
+  padding: 30px 20px 30px 20px;
+  color: #fff;
+  background-color: #002484;
+}
+
+.footer-copyright{
+  padding: 10px 30px 5px 30px;
+  color: #fff;
+  background-color: #031a58;
+}
